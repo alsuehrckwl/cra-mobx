@@ -1,0 +1,46 @@
+@import '../../../style/lib/animations/bounce/all';
+
+.animation_bounce_in {
+  @include bounceIn;
+  animation-duration: 0.75s;
+}
+.animation_bounce_in_down {
+  @include bounceInDown;
+  animation-duration: 0.75s;
+}
+.animation_bounce_in_left {
+  @include bounceInLeft;
+  animation-duration: 0.75s;
+}
+.animation_bounce_in_right {
+  @include bounceInRight;
+  animation-duration: 0.75s;
+}
+.animation_bounce_in_up {
+  @include bounceInUp;
+  animation-duration: 0.75s;
+}
+.animation_bounce_out {
+  @include bounceOut;
+  animation-duration: 0.75s;
+}
+.animation_bounce_out_down {
+  @include bounceOutDown;
+  animation-duration: 0.75s;
+}
+.animation_bounce_out_left {
+  @include bounceOut;
+  animation-duration: 0.75s;
+}
+.animation_bounce_out_right {
+  @include bounceOut;
+  animation-duration: 0.75s;
+}
+.animation_bounce_out_up {
+  @include bounceOut;
+  animation-duration: 0.75s;
+}
+
+.animation_none {
+  opacity: 0;
+}

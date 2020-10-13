@@ -1,0 +1,26 @@
+@import 'themes/color';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: $dark-background;
+
+  .menus {
+    ul {
+      display: flex;
+
+      li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        a {
+          padding: 8px;
+          font-size: 16px;
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import 'themes/color';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: $primary;
+  }
+}

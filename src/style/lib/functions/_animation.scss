@@ -1,0 +1,94 @@
+@mixin flash-animation($startColor, $endColor, $name, $duration, $type) {
+  animation: $name $duration infinite;
+
+  @keyframes #{$name} {
+    0%,
+    50% {
+      #{$type}: $startColor;
+    }
+    50%,
+    100% {
+      #{$type}: $endColor;
+    }
+  }
+}
+
+@mixin flash-animation-svg($startColor, $endColor, $name, $duration) {
+  animation: $name $duration infinite;
+
+  @keyframes #{$name} {
+    0%,
+    50% {
+      fill: $startColor;
+    }
+    50%,
+    100% {
+      fill: $endColor;
+    }
+  }
+}
+
+@mixin shadow-purse-animation(
+  $startColor,
+  $endColor,
+  $name,
+  $duration,
+  $purse
+) {
+  animation: $name $duration infinite;
+
+  @keyframes #{$name} {
+    0% {
+      box-shadow: 0 0 0 0px $startColor;
+    }
+    100% {
+      box-shadow: 0 0 0 $purse $endColor;
+    }
+  }
+}
+
+@keyframes twist-animation {
+  0% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  5% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  10% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  15% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  25% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@mixin fade-in($waitTime) {
+  animation: wait #{$waitTime}, fade-in 800ms #{$waitTime};
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
