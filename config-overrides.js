@@ -14,9 +14,6 @@ module.exports = override(
     environment: path.resolve(__dirname, 'src/common/constants/environment'),
     hooks: path.resolve(__dirname, 'src/hooks'),
     images: path.resolve(__dirname, 'src/assets/images'),
-    fonts: path.resolve(__dirname, 'src/assets/fonts'),
-    themes: path.resolve(__dirname, 'src/style/themes'),
-    common: path.resolve(__dirname, 'src/common')
   }),
   ...addBabelPlugins([
     '@babel/plugin-proposal-decorators',
